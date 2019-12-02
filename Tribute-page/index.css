@@ -1,0 +1,38 @@
+#main {
+    text-align: center;
+    background-color: rgb(216, 215, 215);
+    border-radius: 5px;
+    width: 98%;
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+}
+
+#image {
+    width: 80%;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+
+}
+
+#img-div {
+    display: inline-block;
+    background-color: rgb(235, 235, 235);
+    width: 90%;
+    padding: 20px 0px;
+}
+
+#img-caption {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#tribute-info {
+    padding-top: 50px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+#tribute-info p {
+    text-align: left;
+}
