@@ -39,3 +39,23 @@ input {
     padding-bottom: 10px;
     border-radius: 5px;
 }
+
+#submit {
+    margin-top: 20px;
+}
+
+#diet-health-radio-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.segment{
+    margin-top: 13px
+}
+
+#benefits-checkbox-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}

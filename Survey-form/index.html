@@ -15,12 +15,45 @@
         <p id="description">Please describe your eating habbits</p>
         <div class="form-container">
             <form id="survey-form">
-                <label for="name">Name</label>
-                <input id="name" type="text" required />
-                <label for="email">Email</label>
-                <input id="email" type="email" required />
+                <label id="name-label" for="name">Name</label>
+                <input id="name" type="text" name="name" placeholder="Name" required />
+                <label id="email-label" for="email" class="segment">Email</label>
+                <input id="email" type="email" name="email" placeholder="Email" required />
+                <label id="number-label" for="age" class="segment">Age (optional)</label>
+                <input id="number" type="number" name="age" placeholder="Age" min="18" max="150" />
+                <label id="dropdown-label" for="dropdown" class="segment">What is your diet type?</label>
+                <select id="dropdown">
+                    <option value="" disabled selected required>--Please choose a diet--</option>
+                    <option value="sad">SAD - Standard American Diet</option>
+                    <option value="keto">Ketogenic Diet</option>
+                    <option value="lchf">Low Carb High Fat Diet</option>
+                    <option value="vegetarian">Vegetarian Diet</option>
+                    <option value="vegan">Vegan Diet</option>
+                </select>
+                <div id="diet-health-radio-container" class="segment">
+                    <label id="diet-health-label" for="diet-health">Did going on a diet improve your health?</label>
+                    <div>
+                        <input type="radio" name="diet-health" value="yes" id="diet-health-yes" />
+                        <label for="diet-health-yes">Yes</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="diet-health" value="no" id="diet-health-no" />
+                        <label for="diet-health-no">No</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="diet-health" value="dont-know" id="diet-health-dont-know" />
+                        <label for="diet-health-dont-know">I don't know</label>
+                    </div>
+                </div>
+                <div id="benefits-checkbox-container" class="segment">
+                    <label for="benefits">What benefits do you expect to gain from your diet?</label>
+                    <div>
+                        <input type="checkbox" id="weight-loss" name="weight-loss" />
+                        <label for="weight-loss">Weight loss</label>
+                    </div>
+                </div>
 
-
+                <button id="submit">Sumbit</button>
             </form>
         </div>
 
