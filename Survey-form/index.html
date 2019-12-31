@@ -11,16 +11,16 @@
 
 <body>
     <main id="main">
-        <h1 id="title">Eating habbits survey form</h1>
-        <p id="description">Please describe your eating habbits</p>
+        <h1 id="title">Eating habits survey form</h1>
+        <p id="description">Please describe your eating habits</p>
         <div class="form-container">
             <form id="survey-form">
                 <label id="name-label" for="name">Name</label>
-                <input id="name" type="text" name="name" placeholder="Name" required />
+                <input id="name" class="input" type="text" name="name" placeholder="Name" required />
                 <label id="email-label" for="email" class="segment">Email</label>
-                <input id="email" type="email" name="email" placeholder="Email" required />
+                <input id="email" class="input" type="email" name="email" placeholder="Email" required />
                 <label id="number-label" for="age" class="segment">Age (optional)</label>
-                <input id="number" type="number" name="age" placeholder="Age" min="18" max="150" />
+                <input id="number" class="input" type="number" name="age" placeholder="Age" min="18" max="150" />
                 <label id="dropdown-label" for="dropdown" class="segment">What is your diet type?</label>
                 <select id="dropdown">
                     <option value="" disabled selected required>--Please choose a diet--</option>
@@ -32,40 +32,50 @@
                 </select>
                 <div id="diet-health-radio-container" class="segment">
                     <label id="diet-health-label" for="diet-health">Did going on a diet improve your health?</label>
-                    <div>
-                        <input type="radio" name="diet-health" value="yes" id="diet-health-yes" />
-                        <label for="diet-health-yes">Yes</label>
-                    </div>
-                    <div>
-                        <input type="radio" name="diet-health" value="no" id="diet-health-no" />
-                        <label for="diet-health-no">No</label>
-                    </div>
-                    <div>
-                        <input type="radio" name="diet-health" value="dont-know" id="diet-health-dont-know" />
-                        <label for="diet-health-dont-know">I don't know</label>
+                    <div class="input-choices">
+                        <div>
+                            <input type="radio" name="diet-health" value="yes" id="diet-health-yes" />
+                            <label for="diet-health-yes">Yes</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="diet-health" value="no" id="diet-health-no" />
+                            <label for="diet-health-no">No</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="diet-health" value="dont-know" id="diet-health-dont-know" />
+                            <label for="diet-health-dont-know">I don't know</label>
+                        </div>
                     </div>
                 </div>
                 <div id="benefits-checkbox-container" class="segment">
                     <label for="benefits">What benefits do you expect to gain from your diet?</label>
-                    <div>
-                        <input type="checkbox" id="weight-loss" name="weight-loss" value="weight-loss" />
-                        <label for="weight-loss">Weight loss</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" id="reduce-hypertension" name="reduce-hypertension" value="reduce-hypertension" />
-                        <label for="reduce-hypertension">Reduced hypertension</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" id="cardiovascular-health" name="cardiovascular-health" value="cardiovascular-health" />
-                        <label for="cardiovascular-health">Cardiovascular health improvement</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" id="reduce-inflammation" name="reduce-inflammation" value="reduce-inflammation" />
-                        <label for="reduce-inflammation">Reduced inflammation</label>
+                    <div class="input-choices">
+                        <div>
+                            <input type="checkbox" id="weight-loss" name="weight-loss" value="weight-loss" />
+                            <label for="weight-loss">Weight loss</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="reduce-hypertension" name="reduce-hypertension"
+                                value="reduce-hypertension" />
+                            <label for="reduce-hypertension">Reduced hypertension</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="cardiovascular-health" name="cardiovascular-health"
+                                value="cardiovascular-health" />
+                            <label for="cardiovascular-health">Cardiovascular health improvement</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="reduce-inflammation" name="reduce-inflammation"
+                                value="reduce-inflammation" />
+                            <label for="reduce-inflammation">Reduced inflammation</label>
+                        </div>
                     </div>
                 </div>
 
-                <button id="submit">Sumbit</button>
+                <label class="segment" for="comments">Comments and suggestions</label>
+                <textarea id="comments" placeholder="Enter your comments here" rows="5" cols="50"></textarea>
+
+                <button id="submit">Submit</button>
             </form>
         </div>
 
