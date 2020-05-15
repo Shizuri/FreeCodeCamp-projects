@@ -3,41 +3,86 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Product landing page</title>
+    <title>Perfect Potatoes</title>
     <link rel="stylesheet" type="text/css" href="index.css">
     <link rel="stylesheet" type="text/css" href="normalize.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header id="header">
-        <div class="logo">
-            <img src="https://i.imgur.com/2w3lp3q.png" alt="logo" id="header-img" class="logo-image"/>
-            <div class="logo-name">Perfect Potatoes</div>
-        </div>
-        <nav id="nav-bar">
-            <a href="#Description" class="nav-link">Description</a>
-            <a href="#Testemonials" class="nav-link">Testemonials</a>
-            <a href="#News-letter" class="nav-link">Potato Newsletter</a>
-        </nav>
-    </header>
-    <main class="main">
-        <a id="Description"></a>
-        <div class="potato-image-container">
-            <img src="images/Potatoes1.jpg" alt="potatoes" class="potato-image"/>
-            <div>Always fresh</div>
-        </div>
-        <a id="Testemonials"></a>
-        <div class="box">box</div>
-        <div class="box">box</div>
-        <div class="box">box</div>
-        <a id="Newsletter"></a>
-    </main>
-    <footer>
-        footer stuff
-    </footer>
+    <div class="body-substitute">
+        <header id="header">
+            <div class="logo">
+                <a href="index.html" class="logo-link">
+                    <img src="https://i.imgur.com/2w3lp3q.png" alt="logo" id="header-img" class="logo-image" />
+                </a>
+                <a href="index.html" class="logo-link">
+                    <div class="logo-name">Perfect Potatoes</div>
+                </a>
 
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+            </div>
+            <nav id="nav-bar">
+                <a href="#description" class="nav-link">Description</a>
+                <a href="#testemonials" class="nav-link">Testemonials</a>
+                <a href="#newsletter" class="nav-link">Potato Newsletter</a>
+            </nav>
+        </header>
+        <main class="main">
+            <a id="description" class="anchor"></a>
+            <div class="all-images-container">
+                <div class="potato-image-container">
+                    <img src="https://i.imgur.com/cAAtGJH.jpg" alt="potatoes" class="potato-image" />
+                    <div>Always fresh</div>
+                </div>
+                <div class="potato-image-container">
+                    <img src="https://i.imgur.com/bPDXr5j.jpg" alt="potatoes" class="potato-image" />
+                    <div>Localy grown</div>
+                </div>
+                <div class="potato-image-container">
+                    <img src="https://i.imgur.com/hFiFbw0.jpg" alt="potatoes" class="potato-image" />
+                    <div>Incredibly tasty</div>
+                </div>
+                <div class="potato-image-container">
+                    <img src="https://i.imgur.com/vFCgzp6.jpg" alt="potatoes" class="potato-image" />
+                    <div>Twice baked</div>
+                </div>
+                <div class="potato-image-container">
+                    <img src="https://i.imgur.com/AQH8Qke.jpg" alt="potatoes" class="potato-image" />
+                    <div>Mashed</div>
+                </div>
+                <div class="potato-image-container">
+                    <img src="https://i.imgur.com/rv4kmTm.jpg" alt="potatoes" class="potato-image" />
+                    <div>Just Perfect</div>
+                </div>
+            </div>
+            <div class="video-container">
+                <iframe id="video" width="640" height="360" src="https://www.youtube.com/embed/b1bXQlWLl7U"
+                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+                <div class="video-description">A local sheff making perfect potatoes</div>
+            </div>
+            <a id="testemonials" class="anchor"></a>
+            <div class="testemonials">
+                <h3><i>I still can't believe how good those potatoes were!</i> - Bob</h3>
+                <h3><i>I didn't even need to speak to the manager.</i> - Karen</h3>
+                <h3><i>Never in my entire history of professional potato eating have I had more perfect potatoes.</i> -
+                    Stephen</h3>
+            </div>
+            <a id="newsletter" class="anchor"></a>
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+                <input type="email" id="email" name="email" placeholder="Enter your email to get the Potato Newsletter"
+                    required />
+                <input type="submit" value="Get Newsletter" id="submit" />
+            </form>
+        </main>
+        <footer id="footer">
+            <div>Very important, we sell potatoes, this is a potat, we do not sell those.</div>
+            <img src="https://i.redd.it/psbj502ynlw41.jpg" alt="potat" />
+        </footer>
+
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </div>
 </body>
 
 </html>
