@@ -1,0 +1,29 @@
+.body {
+    font-family: 'Lato', sans-serif;
+}
+
+#main-doc {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 50px;
+}
+
+.main-section {}
+
+code {
+    display: block;
+    text-align: left;
+    position: relative;
+    background: #eee;
+    color: #333;
+    font-family: consolas, monaco, "Andale Mono", monospace;
+    white-space: pre;
+    line-height: 2;
+    padding: 15px;
+    margin: 10px;
+}
+
+.bottom-space-filler {
+    height: 100px;
+}
