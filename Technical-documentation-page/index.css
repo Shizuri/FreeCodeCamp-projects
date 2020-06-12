@@ -1,15 +1,14 @@
 .body {
     font-family: 'Lato', sans-serif;
+    display: flex;
 }
 
 #main-doc {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-left: 50px;
+    margin-left: 300px;
 }
-
-.main-section {}
 
 code {
     display: block;
@@ -25,5 +24,50 @@ code {
 }
 
 .bottom-space-filler {
-    height: 100px;
+    height: 200px;
+}
+
+#navbar {
+    position: fixed;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    font-size: 20px;
+    background-color: white;
+}
+
+#navbar header {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.nav-link {
+    padding: 12px;
+    text-decoration: none;
+    color: black;
+}
+
+#navigation-popup {
+    padding: 12px;
+    display: none;
+    cursor: pointer;
+}
+
+@media (max-width: 900px) {
+    .nav-link {
+        display: none;
+    }
+    #navigation-popup {
+        display: block;
+    }
+    #main-doc {
+        margin-left: 0px;
+        margin-top: 100px;
+    }
+    #navbar {
+        width: 100%;
+    }
 }
