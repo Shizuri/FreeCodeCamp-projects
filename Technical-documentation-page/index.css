@@ -1,5 +1,6 @@
 .body {
     font-family: 'Lato', sans-serif;
+    font-size: 1em;
     display: flex;
 }
 
@@ -21,6 +22,7 @@ code {
     line-height: 2;
     padding: 15px;
     margin: 10px;
+    z-index: -1;
 }
 
 .bottom-space-filler {
@@ -48,12 +50,22 @@ code {
     padding: 12px;
     text-decoration: none;
     color: black;
+    z-index: 2;
+}
+
+.nav-link-mobile {
+    display: none;
+    padding: 12px;
+    text-decoration: none;
+    color: black;
+    z-index: 2;
 }
 
 #navigation-popup {
     padding: 12px;
     display: none;
     cursor: pointer;
+    z-index: 2;
 }
 
 @media (max-width: 900px) {
