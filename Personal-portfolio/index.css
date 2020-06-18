@@ -6,6 +6,7 @@
     align-items: center;
     background-color: #0b132b;
     color: #6fffe9;
+    text-align: center;
 }
 
 #welcome-section {
@@ -35,6 +36,33 @@
     width: 100%;
 }
 
-.projects-container {
-    
+.projects-description {
+    font-size: 30px;
+}
+
+.project-tile {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+    border-radius: 15px;
+    background-color: #3a506b;
+    margin-bottom: 20px;
+}
+
+.project-image {
+    align-self: center;
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+
+.project-title {
+    padding: 5px;
+}
+
+@media (max-width: 481px) {
+    #welcome-section {
+        /* height: 100vh; */
+        /* background-color: teal; */
+    }
 }
