@@ -1,7 +1,6 @@
-.body {
+.project-container {
     font-family: 'Lato', sans-serif;
     font-size: 1em;
-    display: flex;
 }
 
 #main-doc {
@@ -22,7 +21,6 @@ code {
     line-height: 2;
     padding: 15px;
     margin: 10px;
-    z-index: -1;
 }
 
 .bottom-space-filler {
@@ -31,6 +29,7 @@ code {
 
 #navbar {
     position: fixed;
+    top: 0px;
     padding-top: 10px;
     display: flex;
     flex-direction: column;
@@ -38,6 +37,7 @@ code {
     width: 300px;
     font-size: 20px;
     background-color: white;
+    z-index: 3;
 }
 
 #navbar header {
@@ -68,7 +68,11 @@ code {
     z-index: 2;
 }
 
-@media (max-width: 900px) {
+section {
+    width: 100%;
+}
+
+@media (max-width: 479px) {
     .nav-link {
         display: none;
     }
@@ -77,9 +81,10 @@ code {
     }
     #main-doc {
         margin-left: 0px;
-        margin-top: 100px;
     }
     #navbar {
-        width: 100%;
+        position: sticky;
+        top: 0;
+        width: 100vw;
     }
 }
