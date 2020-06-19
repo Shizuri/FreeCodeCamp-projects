@@ -1,9 +1,10 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 1em;
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* align-items: center; */
     background-color: #0b132b;
     color: #6fffe9;
     text-align: center;
@@ -15,6 +16,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
+    /* height: calc(100vh - 60px); how I want it to be, but it messes up the test */
 }
 
 #welcome-section h1 {
@@ -65,6 +67,7 @@ body {
     -webkit-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.75);
     box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.75);
+    transition: box-shadow 0.3s;
 }
 
 .project-image {
@@ -75,6 +78,50 @@ body {
 
 .project-title {
     padding: 5px;
+}
+
+#navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #5bc0be;
+    color: #1c2541;
+    font-size: 2em;
+    font-weight: 500;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+.navbar-item {
+    margin: 0px 10px;
+}
+
+.navbar-item:after {
+    content: '';
+    width: 0px;
+    height: 2px;
+    display: block;
+    background: #1c2541;
+    transition: 300ms;
+}
+
+.navbar-item:hover:after {
+    width: 100%;
+}
+
+#constact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#constact-section h1 {
+    font-size: 3rem;
 }
 
 @media (max-width: 1350px) {
