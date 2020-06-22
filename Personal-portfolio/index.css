@@ -97,6 +97,8 @@ body {
 
 .navbar-item {
     margin: 0px 10px;
+    text-decoration: none;
+    color: #1c2541;
 }
 
 .navbar-item:after {
@@ -122,6 +124,35 @@ body {
 
 #constact-section h1 {
     font-size: 3rem;
+}
+
+.top-right-link {
+    position: fixed;
+    top: 5px;
+    left: 10px;
+    color: #1c2541;
+    font-size: 2.5em;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.top-right-link:after {
+    content: '';
+    width: 0px;
+    height: 3px;
+    display: block;
+    background: #1c2541;
+    transition: 300ms;
+}
+
+.top-right-link:hover:after {
+    width: 100%;
+}
+
+#profile-link {
+    text-decoration: none;
+    color: #6fffe9;
+    font-size: 2em;;
 }
 
 @media (max-width: 1350px) {
