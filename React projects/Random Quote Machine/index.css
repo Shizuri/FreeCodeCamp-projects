@@ -1,0 +1,78 @@
+body {
+    height: 100vh;
+    background-color: #eee2dc;
+    color: #123c69;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.App {
+    width: 550px;
+    height: auto;
+    background-color: #edc7b7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    padding: 30px;
+}
+
+.App-text {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.App-author {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    text-align: right;
+    font-style: italic;
+}
+
+.App-lower-box {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.App-tweet-quote {
+    color: #123c69;
+    font-size: 2.5rem;
+    margin-left: 20px;
+}
+
+.App-tweet-quote:hover {
+    opacity: 0.9;
+}
+
+.App-new-quote {
+    border: none;
+    background-color: #123c69;
+    color: #eee2dc;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.App-new-quote:hover {
+    opacity: 0.9;
+}
+
+@media (max-width: 700px) {
+    .App {
+        width: 70vw;
+    }
+    .App-text {
+        font-size: 1.2rem;
+    }
+    .App-author {
+        font-size: 1rem;
+    }
+}
